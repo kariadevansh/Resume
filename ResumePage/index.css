@@ -1,0 +1,330 @@
+/* Fonts */
+h1 { 
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+h2 { /* Contact, Skills, Education, About me, Work Experience */
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+h3 { 
+  font-family: 'Open Sans', sans-serif;
+}
+
+.jobPosition span, 
+.projectName span {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.upperCase {
+  text-transform: uppercase; 
+}
+
+.smallText, 
+.smallText span, 
+.smallText p, 
+.smallText a {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: justify;
+}
+
+/* End Fonts */
+
+/* Colors */
+h1 { 
+  color: #111; 
+}
+
+.leftPanel, 
+.leftPanel a {
+  color: #bebebe;
+  text-decoration: none;
+}
+
+.leftPanel h2 {
+  color: white;
+}
+
+.leftPanel .item {
+  color: white;
+}
+
+/* Background color for sections inside left panel */
+.leftPanel {
+  background-color: #484444; /* Background color for the entire left panel */
+  padding: 0.7cm;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; 
+}
+
+/* Ensure consistent alignment */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; 
+  gap: 1cm; /* Space between left and right panels */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .leftPanel {
+    width: 30%;
+  }
+  
+  .rightPanel {
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .leftPanel {
+    width: 35%;
+  }
+  
+  .rightPanel {
+    width: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  .leftPanel {
+    width: 40%;
+    padding: 0.5cm;
+  }
+  
+  .rightPanel {
+    width: 60%;
+    padding: 0.5cm;
+  }
+  
+  .leftPanel img {
+    width: 3cm;
+    height: 3cm;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftPanel, 
+  .rightPanel {
+    width: 100%;
+  }
+  
+  .leftPanel {
+    margin-bottom: 1cm;
+  }
+}
+
+/* Styling adjustments */
+.leftPanel .details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Ensure it takes available space */
+}
+
+.leftPanel img {
+  width: 4cm;
+  height: 4cm;
+  margin-bottom: 0.7cm;
+  border-radius: 50%;
+  border: 0.15cm solid white;
+  object-fit: cover;
+  object-position: 50% 50%;
+  box-sizing: border-box; 
+}
+
+/* Additional Padding and Margin Fixes */
+.leftPanel .item {
+  background-color: #484444; /* Consistent background color for items */
+  margin-bottom: 0.7cm; /* Space between items */
+  padding: 0.7cm; /* Padding inside items for consistency */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.leftPanel .smallText, 
+.leftPanel .smallText span, 
+.leftPanel .smallText p, 
+.leftPanel .smallText a {
+  font-size: 0.45cm;
+  margin: 0;
+}
+
+.contactIcon {
+  width: 0.5cm;
+  text-align: center;
+  box-sizing: border-box; 
+}
+
+p {
+  margin: 0.05cm ;
+}
+
+.skillBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25cm; /* Adjust the gap between the boxes */
+  margin-bottom: 0.35cm; /* Adjust the space below the skill section */
+}
+
+.skill {
+  background-color: #6e5959; /* Background color for the skill boxes */
+  padding: 0.1cm; /* Padding inside each skill box */
+  border-radius: 0.12cm; /* Rounded corners for the skill boxes */
+  border: 1px solid #6e5959; /* Border for the skill boxes */
+  text-align: center; /* Center text inside the skill boxes */
+  box-sizing: border-box; /* Include padding and border in element’s total width and height */
+  white-space: nowrap; /* Prevent text from wrapping inside the box */
+}
+
+.skill span {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.35cm;
+  text-transform: capitalize; /* Capitalize the first letter of each word */
+}
+
+.leftPanel .interests {
+  font-size: 0.35cm;
+  margin-top: 0.7cm;
+  color: white; /* Ensure text color is white */
+  padding: 0.7cm; /* Padding inside the interests section */
+  box-sizing: border-box; 
+}
+
+
+.rightPanel .workExperience {
+  margin-bottom: 0.7cm;
+  position: relative; 
+  padding-left: 0.7cm;
+}
+
+.rightPanel .workExperience:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.2cm;
+  background-color: #b8abab; /* Color of the line */
+}
+
+.rightPanel .project {
+  margin-bottom: 0.7cm;
+  position: relative; /* Needed for the pseudo-element */
+  padding-left: 0.7cm;
+}
+
+.rightPanel .project:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.2cm;
+  background-color: #b8abab; /* Color of the line */
+}
+
+.rightPanel .certificates {
+  margin-bottom: 0.7cm;
+}
+
+.item h2 {
+  font-size: 0.55cm;
+}
+
+.bottomLineSeparator {
+  border-bottom: 0.05cm solid white;
+}
+
+
+
+.alignleft {
+  text-align: left !important;
+  width: 1cm;
+}
+
+.alignright {
+  text-align: right !important;
+  width: 0.6cm;
+  margin-right: 0.1cm;
+}
+
+.workExperience > ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.workExperience > ul > li {
+  position: relative;
+  margin: 0;
+  padding-bottom: 0.5cm;
+  padding-left: 0.5cm;
+}
+
+.jobPosition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  padding: 0.7cm 0;
+}
+
+.item h2 {
+  margin: 0;
+}
+
+.lastParagrafNoMarginBottom {
+  margin-bottom: 0;
+}
+
+.workExperience > ul > li ul {
+  padding-left: 0.5cm;
+  list-style-type: disc;
+}
+
+
+/* New Styles for Education Section */
+.educationList {
+  list-style-type: disc;
+  padding-left: 1cm;
+  margin: 0;
+}
+
+.educationList li {
+  margin-bottom: 0.7cm;
+}
+
+.educationList li strong {
+  display: block;
+  font-weight: bold;
+}
+
+/* Printing */
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+}
+
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+
+@page {
+  size: 21cm 29.7cm;
+  padding: 0;
+  margin: 0mm;
+  border: none;
+  border-collapse: collapse;
+}
+/* End Printing */
